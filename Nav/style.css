@@ -1,0 +1,59 @@
+/* Basic styling for navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav h2 {
+    margin-top: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Styling for navigation menu on small screens */
+.menu-toggle {
+    display: none; /* Hide menu toggle by default */
+}
+
+.show-nav {
+    display: block; /* Show navigation menu */
+}
+
+/* Styling for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    nav {
+        padding-top: 40px; /* Add space for menu toggle */
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle on small screen */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none; /* Hide navigation menu by default on small screens */
+    }
+}
+
